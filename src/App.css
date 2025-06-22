@@ -19,3 +19,11 @@ body{
   clip: rect(0 0 0 0) !important;
   overflow: hidden !important;
 }
+.hidden-block{
+  width: 0;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  top:-100px;
+  right:0;
+}

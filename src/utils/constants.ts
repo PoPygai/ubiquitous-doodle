@@ -1,7 +1,8 @@
+import type {CardSkillsItem, ContactItem, PortfolioItem} from "./types";
 
-export const valueHeaderBtns = ["About","Skills","Portfolio","Mini-Games","Contact"]
+export const valueHeaderBtns = ["About","Skills","Portfolio","Mini-Games","Connect"]
 
-export const valueCardSkills = [
+export const valueCardSkills:CardSkillsItem[] = [
     {
         title:"🧱 HTML / CSS / SASS",
         description:"Clean and responsive layout. Confident in using SASS for better structure and maintainability.",
@@ -31,7 +32,7 @@ export const valueCardSkills = [
 
 export const textBio = "Hi! My name is David, I’m 17 years old, and I’m an aspiring Full Stack developer. I'm passionate about web development and always eager to learn new technologies. I’m actively growing my skills in both frontend and backend development. I have hands-on experience with HTML, CSS, SASS, JavaScript, TypeScript, React, Node.js, and Express. Currently, I’m working on personal pet projects and aiming to gain my first commercial experience in the industry. I’ve completed a Full Stack Developer course at the Tel-Ran training center. I’m open to new knowledge, exciting challenges, and collaboration opportunities."
 
-export const valuePortfolio = [
+export const valuePortfolio : PortfolioItem[] = [
     {
         title:"FitnessUi",
         href: "https://github.com/PoPygai/FintnessUi.git",
@@ -71,5 +72,28 @@ export const valuePortfolio = [
         title:"Front + Back",
         href: "https://github.com/PoPygai/FintnessUi.git",
         description:"Front + Back"
+    },
+]
+
+export const valueContact : ContactItem[] = [
+    {
+        topic:"Gmail",
+        icon:"../../../icons/icons8-gmail-48.png",
+        href:"mailto:davidrashkovskiy@gmail.com"
+    },
+    {
+        topic:"Telegram",
+        icon:"../../../icons/icons8-telegram-48.png",
+        href:"https://t.me/user_nn_123"
+    },
+    {
+        topic:"LeetCode",
+        icon:"../../../icons/icons8-leetcode-48.png",
+        href:"https://leetcode.com/u/PoPygai/"
+    },
+    {
+        topic:"GitHub",
+        icon:"../../../icons/icons8-github-50.png",
+        href:"https://github.com/PoPygai"
     },
 ]

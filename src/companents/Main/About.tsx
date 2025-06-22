@@ -8,7 +8,7 @@ const About = () => {
             {/*<div className="container">*/}
                 <h2 className="visually-hidden">block about author this website </h2>
                 <div className="about-bio">
-                    <img className="about-bio-image" src="../../../public/images/images-bio.png" alt="image-person" />
+                    <img className="about-bio-image" src="/images/images-bio.png" alt="image-person" />
                 </div>
                 <div className="about-content">
                     <h4 className="about-content-hint hint" >About Me</h4>

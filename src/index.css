@@ -137,7 +137,7 @@ a{
 
 :root {
   --bg-color: #132e35;
-  --header-bg-color: #0f1e23;
+  --dark-bg-color: #0f1e23;
   --alternative-bg-color: #2c4951;
   --color-text: white;
   --color-text-gray: #abaeb5
@@ -147,7 +147,7 @@ a{
 
 .light-style{
   --bg-color: #ffffff;
-  --header-bg-color: #b2b2b2;
+  --dark-bg-color: #b2b2b2;
   --alternative-bg-color: #dcdcdc;
   --color-text: #000000;
   --color-text-gray: #262626

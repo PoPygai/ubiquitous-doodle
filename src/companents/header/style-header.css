@@ -1,6 +1,6 @@
 
 .header{
-    background-color: var(--header-bg-color);
+    background-color: var(--dark-bg-color);
     color: var(--color-text-gray);
     display: flex;
     justify-content: space-between;

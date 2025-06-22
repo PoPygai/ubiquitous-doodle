@@ -30,8 +30,8 @@ const HeaderActions:React.FC = () => {
         <div className="header-actions">
             <form className={"header-actions-lang"} action="#">
                 <select>
+                    <option value={"ENG"}>ENG</option>
                     <option value={"RU"}>RU</option>
-                    <option selected value={"ENG"}>ENG</option>
                 </select>
             </form>
             <div className="header-actions-switch">
