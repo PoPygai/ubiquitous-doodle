@@ -36,7 +36,7 @@ const Portfolio = () => {
                     {
                         valuePortfolio.map((item, i) => (
                             <li className="portfolio-item" key={i}>
-                                <a href={item.href} className="portfolio-link">{item.title} </a>
+                                <a href={item.href} className="portfolio-link" target="_blank">{item.title}</a>
                                 <span>{item.description}</span>
                             </li>
                         ))

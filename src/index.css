@@ -4,11 +4,6 @@
   font-style: normal;
   font-display: swap;
 }
-
-
-
-
-
 /**
   Нормализация блочной модели
  */
@@ -133,7 +128,13 @@ a{
   text-decoration: none;
   color: inherit;
 }
+a:hover{
+  color: var(--color-text);
+}
 
+li{
+  list-style: none;
+}
 
 :root {
   --bg-color: #132e35;
@@ -141,10 +142,7 @@ a{
   --alternative-bg-color: #2c4951;
   --color-text: white;
   --color-text-gray: #abaeb5
-
-
 }
-
 .light-style{
   --bg-color: #ffffff;
   --dark-bg-color: #b2b2b2;

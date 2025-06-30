@@ -3,7 +3,7 @@ import './style-footer.css'
 
 const Footer = () => {
     return (
-        <footer className="footer" id="connect">
+        <footer className="footer" id="contact">
             <h2 className="visually-hidden">contact menu</h2>
             <div className="hidden-block" ></div>
             <div className="container">

@@ -1,6 +1,9 @@
 import type {CardSkillsItem, ContactItem, PortfolioItem} from "./types";
 
-export const valueHeaderBtns = ["About","Skills","Portfolio","Mini-Games","Connect"]
+export const valueHeaderBtns = ["About","Skills","Portfolio","Contact"]
+
+export const valueMenuBtns = ["Todo-List","Quiz","Game"]
+
 
 export const valueCardSkills:CardSkillsItem[] = [
     {

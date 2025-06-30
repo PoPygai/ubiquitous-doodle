@@ -1,5 +1,5 @@
 import {valueContact} from "../../utils/constants.ts";
-import React, {useEffect, useRef} from "react";
+import  {useEffect, useRef} from "react";
 
 const FooterContact = () => {
     const refContact = useRef<(HTMLLIElement | null)[]>([]);
@@ -21,7 +21,7 @@ const FooterContact = () => {
                     valueContact.map((item, index) => (
                         <li ref={(el) => {refContact.current[index] = el;}}
                             className="footer-item" key={index} data-img-footer={item.icon}>
-                            <a className="footer-link" href={item.href} >{item.topic}</a>
+                            <a className="footer-link" href={item.href} target="_blank">{item.topic}</a>
                         </li>
                     ))
                 }

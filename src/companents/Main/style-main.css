@@ -41,7 +41,7 @@
 }
 
 .title{
-    font-size: clamp(12px,2vw,30px);
+    font-size: clamp(12px,1.5vw,30px);
 
 }
 .about-content-title{

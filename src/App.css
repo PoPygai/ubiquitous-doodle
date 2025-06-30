@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
 body{
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
@@ -7,6 +11,13 @@ body{
   background-color: var(--bg-color);
   color: var(--color-text);
 }
+#root {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+
 .visually-hidden {
   position: absolute !important;
   width: 1px !important;
@@ -27,3 +38,5 @@ body{
   top:-100px;
   right:0;
 }
+
+

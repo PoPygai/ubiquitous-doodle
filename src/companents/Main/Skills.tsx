@@ -16,7 +16,7 @@ const Skills = () => {
                     observer.disconnect();
                 }
             },
-            { threshold: 0.3 }
+            { threshold: 0.4 }
         );
 
         observer.observe(section);
