@@ -14,3 +14,8 @@ export type ContactItem = {
     icon: string;
     topic: string;
 };
+
+type Tasks = {
+    title: string,
+    taskDone : boolean,
+}

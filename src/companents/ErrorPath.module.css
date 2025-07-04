@@ -12,11 +12,10 @@
 .alertErrorTitle::after {
     content: "";
     position: absolute;
-    display: block;
     top: 50%;
     left: -100%;
     transform: translateY(-50%);
-    background: url("/images/error-404.png") center/contain no-repeat;
+    background: url("../../public/images/error-404.png") center/contain no-repeat;
     width: 27vw;
     min-width: 141px;
     aspect-ratio: 1;
