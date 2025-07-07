@@ -100,3 +100,44 @@ export const valueContact : ContactItem[] = [
         href:"https://github.com/PoPygai"
     },
 ]
+
+export const quizInformation = [
+    {
+        question : "What's the output?",
+        task:
+            "function sayHi() {\n" +
+            "  console.log(name);\n" +
+            "  console.log(age);\n" +
+            "  var name = \"Lydia\";\n" +
+            "  let age = 21;\n" +
+            "}\n" +
+            "\n" +
+            "sayHi();"
+            ,
+        answers: {
+            A:" Lydia and undefined",
+            B:" Lydia and ReferenceError",
+            C:" ReferenceError and 21",
+            D:" undefined and ReferenceError",
+        },
+        trueAnswer : {B:" Lydia and ReferenceError"}
+    },
+    {
+        question : "What's the output?",
+        task:"for (var i = 0; i < 3; i++) {\n" +
+            "  setTimeout(() => console.log(i), 1);\n" +
+            "}\n" +
+            "\n" +
+            "for (let i = 0; i < 3; i++) {\n" +
+            "  setTimeout(() => console.log(i), 1);\n" +
+            "}\n"
+        ,
+        answers: {
+            A:" 0 1 2 and 0 1 2",
+            B:" 0 1 2 and 3 3 3",
+            C:"  3 3 3 and 0 1 2",
+
+        },
+        trueAnswer : {C:"  3 3 3 and 0 1 2",}
+    }
+]

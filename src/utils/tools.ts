@@ -1,9 +1,8 @@
 import React from "react";
 
-export const handlerClickMenu = (
-    refItems: React.RefObject<(HTMLAnchorElement | null)[]>,
-    refListMenu: React.RefObject<HTMLUListElement | null>
-) => {
+export const handlerClickMenu = (refItems: React.RefObject<(HTMLAnchorElement | null)[]>,
+    refListMenu: React.RefObject<HTMLUListElement | null>) => {
+
     refItems.current?.forEach((item) => {
         item?.classList.remove("active");
     });

@@ -1,0 +1,115 @@
+
+
+.quiz{
+    padding:15px 10px 0 10px;
+
+    margin-bottom: 30px;
+    width:100%;
+    max-width: 1000px;
+    margin-inline: auto;
+}
+
+.quiz-header{
+    padding-inline: 10px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.quiz-title{
+    font-size: clamp(14px,1.25vw,30px);
+}
+.quiz-timer,.quiz-counter{
+    font-size: clamp(10px,0.88vw,20px);
+}
+
+.quiz-wrapper{
+    border: 1px var(--color-text) solid;
+    border-radius: 5px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.quiz-question{
+    width: 100%;
+}
+
+
+.quiz-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    /* отступ от верха потому что нельзя нормально сделать отступ у SyntaxHighlighter не знаю почему */
+    margin-block: 30px;
+    text-align: start;
+    padding-inline: 10px ;
+
+}
+.quiz-item{
+    font-size:clamp(12px,1.04vw,24px);
+    padding: 10px;
+    width: calc(50% - 20px);
+    border: 1px solid var(--color-text-gray);
+    border-radius: 6px;
+    color: var(--color-text-gray);
+    background-color: var(--dark-bg-color);
+    cursor: pointer;
+}
+.quiz-item:hover{
+    color: var(--color-text);
+}
+
+
+.quiz-button{
+    width: 90px;
+    height: 50px;
+    background-color: var(--dark-bg-color);
+
+    border: 1px solid var(--color-text-gray);
+    border-radius: 6px;
+    color: var(--color-text-gray);
+    font-weight: bold;
+}
+.quiz-button:hover{
+    color: var(--color-text);
+    box-shadow: 1px 2px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.back{
+    margin-right: 10px;
+}
+
+.true-answer{
+    background-color: green;
+    color: white;
+}
+.false-answer{
+    background-color: #ae0303;
+    color: white;
+}
+
+.button-disabled{
+    opacity: 0.3;
+}
+.button-disabled:hover{
+    color: var(--color-text-gray);
+    box-shadow: none;
+}
+
+
+@media (max-width: 500px) {
+    .quiz-list {
+        gap: 10px;
+        padding-inline: 5px;
+    }
+    .quiz-item{
+        width: 100%;
+    }
+    .quiz-question {
+        aspect-ratio: unset;
+        height: auto;
+        min-height: 120px;
+    }
+}
+
