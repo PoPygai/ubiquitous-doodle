@@ -1,9 +1,13 @@
-import {valuePortfolio} from "../../utils/constants.ts";
 import { useEffect, useRef, useState} from "react";
+import {useTranslation} from "react-i18next";
+import type {PortfolioItem} from "../../utils/types";
 
 const Portfolio = () => {
     const refList = useRef<HTMLUListElement>(null);
     const [visible, setVisible] = useState<boolean>(false);
+
+    const {t,i18n} = useTranslation();
+    const valuePortfolio  = t("valuePortfolio",{ returnObjects: true }) as PortfolioItem[];
 
     useEffect(() => {
 
@@ -25,11 +29,10 @@ const Portfolio = () => {
 
 
     return (
-        <section className="portfolio ">
+        <section className="portfolio" id="portfolio">
             <h2 className="visually-hidden">portfolio</h2>
-            <div className="hidden-block" id="portfolio"></div>
 
-            <h3 className="portfolio-title " >Portfolio:</h3>
+            <h3 className="portfolio-title " >{i18n.language === "ru" ? "Портфолио":"Portfolio"}:</h3>
             <div className="portfolio-container">
                 <ul  ref={refList}
                      className={`portfolio-list ${visible ? "visible" : ""}`}>

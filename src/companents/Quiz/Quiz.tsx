@@ -1,7 +1,8 @@
 import "./style-quiz.css";
 import QuizList from "./QuizList.tsx";
 import {useState} from "react";
-import {quizInformation} from "../../utils/constants.ts";
+import {quizInformation} from "../../utils/question.ts";
+
 
 
 const Quiz = () => {

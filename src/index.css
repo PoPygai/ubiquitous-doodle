@@ -141,7 +141,9 @@ li{
   --dark-bg-color: #0f1e23;
   --alternative-bg-color: #2c4951;
   --color-text: white;
-  --color-text-gray: #abaeb5
+  --color-text-gray: #abaeb5;
+  --medium-title-size: clamp(12px,1.35vw,36px);
+  --little-title-size: clamp(10px,0.9vw,24px);
 }
 .light-style{
   --bg-color: #ffffff;

@@ -1,9 +1,13 @@
-import {valueCardSkills} from "../../utils/constants.ts";
 import {useEffect, useRef, useState} from "react";
+import {useTranslation} from "react-i18next";
+import type {CardSkillsItem } from "../../utils/types";
 
 const Skills = () => {
     const refSection = useRef<HTMLDivElement>(null);
     const [isVisible, setIsVisible] = useState(false);
+
+    const {t, i18n} = useTranslation();
+    const valueCardSkills  = t("valueCardSkills",{ returnObjects: true }) as CardSkillsItem[];
 
     useEffect(() => {
         const section = refSection.current;
@@ -26,12 +30,12 @@ const Skills = () => {
     return (
         <section ref={refSection}
                  className={`skills start-animation ${isVisible ? "visible" : ""}`}
+                 id="skills"
         >
             <div className="container">
-                <div className="hidden-block" id="skills"></div>
                 <h2 className="visually-hidden">Skills author this website</h2>
-                <h4 className="skills-hint hint " >Skills</h4>
-                <h2 className="skills-title title">What Can I Do</h2>
+                <h4 className="skills-hint hint " >{i18n.language === "ru" ?"Навыки" : "Skills"}</h4>
+                <h2 className="skills-title title">{i18n.language === "ru" ?"Что я могу" : "What Can I Do"}</h2>
                 <div className="skills-container">
                     <ul className="skills-list ">
                         {

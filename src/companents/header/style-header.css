@@ -7,15 +7,13 @@
     padding: 10px 16px;
     min-height: 75px;
     flex-wrap: wrap;
-    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
 
     position: sticky;
     top: 0;
     z-index: 1;
 
-    font-size: clamp(10px, 0.9vw, 30px);
-
+    font-size: clamp(8px, 0.9vw, 30px);
 }
 
 .header-logo{
@@ -128,15 +126,7 @@
 
 
 
-@media (max-width: 480px){
-    .header-menu-link{
-        height: 50px;
-    }
-    .header-menu-list{
-        column-gap: 20px;
 
-    }
-}
 
 @media (max-width: 800px) {
     .header{
@@ -148,5 +138,27 @@
     }
     .header-menu-list{
         justify-content: center;
+    }
+}
+@media (max-width: 480px){
+    .header-menu-link{
+        height: 50px;
+    }
+    .header-menu-list{
+        column-gap: 20px;
+    }
+}
+
+@media (max-width: 400px){
+    .mini-game-list {
+        width: 70px;
+        height: 80px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 380px){
+    .header-menu-list{
+        column-gap: 10px;
     }
 }

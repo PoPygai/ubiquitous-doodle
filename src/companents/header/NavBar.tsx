@@ -1,13 +1,22 @@
-import {valueHeaderBtns, valueMenuBtns} from "../../utils/constants.ts";
 import React, {useEffect, useRef} from "react";
 import {handleDocumentClick, handlerClickMenu} from "../../utils/tools.ts";
 import {useNavigate} from "react-router";
+import { useTranslation } from 'react-i18next';
+
 
 const NavBar:React.FC = () => {
     const refItems = useRef<(HTMLAnchorElement | null)[]>([]);
     const refListMenu = useRef<HTMLUListElement | null>(null);
     const refMiniGameBlock = useRef<HTMLLIElement | null>(null);
     const navigate = useNavigate();
+
+
+    const { t  } = useTranslation();
+    const valueHeaderBtns = t("valueHeaderBtns", { returnObjects: true }) as string[];
+    const valueMenuBtns  = t("valueMenuBtns", { returnObjects: true }) as string[];
+
+    const valueHeaderBtnsENG = (t("valueHeaderBtns", { lng: "en", returnObjects: true })) as string[];
+    const valueMenuBtnsENG  = t("valueMenuBtns", { lng: "en", returnObjects: true }) as string[];
 
 
     const handlerClick = (e: React.MouseEvent<HTMLAnchorElement>,refItems: React.RefObject<(HTMLAnchorElement | null)[]>) => {
@@ -50,7 +59,7 @@ const NavBar:React.FC = () => {
                             className="header-menu-link"
                             onClick={(e) => handlerClick(e,refItems)}
                             data-index={i}
-                            href={"#" + value.toLowerCase()}
+                            href={"#" + valueHeaderBtnsENG[i].toLowerCase()}
                         >
                             {value}
                         </a>
@@ -62,7 +71,7 @@ const NavBar:React.FC = () => {
                     <ul ref={refListMenu} className="mini-game-list disableMenu">
                         {valueMenuBtns.map((value, i) => (
                             <li className="mini-game-item" key={i}>
-                                <a href={`/${value.toLowerCase()}`}>{value}</a>
+                                <a href={`/${valueMenuBtnsENG[i].toLowerCase()}`}>{value}</a>
                             </li>
                         ))}
                     </ul>

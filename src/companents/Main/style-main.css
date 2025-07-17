@@ -1,4 +1,6 @@
-
+#about,#home,#skills,#portfolio,#contact{
+    scroll-margin-top:100px
+}
 
 .container{
     max-width: 1200px;
@@ -6,11 +8,96 @@
     padding-inline:  10px;
 }
 
+
+
+
+.welcome{
+    padding-inline: 20px;
+    background-color: var(--alternative-bg-color);
+
+}
+.welcome-container{
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.welcome-image{
+    max-width: 20vw;
+    min-width: 320px;
+}
+.welcome-description{
+    font-size: clamp(12px, 1.5vw, 30px);
+
+}
+.animation{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 45px;
+    position: relative;
+}
+
+.animation::after {
+    content: "|";
+    animation: blink 1s infinite;
+}
+
+
+
+.welcome-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+.welcome-title{
+    font-size: clamp(30px, 3.3vw, 64px);
+}
+.welcome-title:first-line{
+    font-size: clamp(18px, 1.87vw, 36px);
+}
+
+
+.welcome-resume{
+    padding: 20px 10px;
+    border-radius: 20px;
+    max-width: 200px;
+    width: clamp(120px,20vw, 200px);
+
+    font-size: clamp(10px, 0.83vw, 20px);
+
+    border: 1px solid var(--color-text-gray);
+    background-color: var(--bg-color);
+    color: var(--color-text-gray);
+    cursor: pointer;
+    box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.3);
+}
+.welcome-resume:hover{
+    color: var(--color-text);
+    border: 1px solid var(--color-text);
+}
+.welcome-resume:active{
+    position: relative;
+    top: 3px;
+    left: 5px;
+    box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .about-bio-image{
     max-width: 25vw;
     min-width: 125px;
 }
 .about{
+    padding-top: 20px;
     position: relative;
     display: flex;
     column-gap: 60px;
@@ -28,7 +115,7 @@
     color:var(--color-text-gray);
     display: flex;
     align-items: center;
-    font-size: clamp(9px,1vw,20px);
+    font-size:  var(--little-title-size);
 
 }
 .hint::before{
@@ -98,10 +185,10 @@
     box-shadow: 0 15px 8px 0 rgba(0, 0, 0, 0.3);
 }
 .skills-item-title{
-    font-size: clamp(12px,1.25vw,40px);
+    font-size: var(--medium-title-size);
 }
 .skills-item-description{
-    font-size: clamp(10px, 1vw,30px);
+    font-size:  var(--little-title-size);
 }
 
 
@@ -146,7 +233,8 @@
 
 
 .portfolio-link{
-    font-size: clamp(12px,1.56vw,40px);
+    /*font-size: clamp(12px,1.3vw,40px);*/
+    font-size: var(--medium-title-size);
     text-decoration: underline;
     text-underline-offset: 8px;
 
@@ -170,6 +258,16 @@
     text-shadow:  0 3px 8px  black;
 }
 
+@keyframes blink {
+    0%, 50%, 100% {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 0;
+    }
+}
+
+
 @media (max-width: 870px) {
     .portfolio{
         padding-block: 30px;
@@ -189,16 +287,21 @@
     .portfolio-list{
         padding: 20px 16px;
     }
+    .welcome-image{
+        display: none;
+    }
+    .welcome-content{
+        row-gap: 20px;
+    }
+    .portfolio-list{
+        max-width: 100%;
+    }
 
 }
 @media (max-width: 570px) {
     .about{
         margin-bottom: 60px;
     }
+
 }
 
-@media (max-width: 515px) {
-    .portfolio-list{
-        max-width: 100%;
-    }
-}

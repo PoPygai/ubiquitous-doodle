@@ -1,7 +1,7 @@
 import React, {useEffect, useRef} from "react";
-import {quizInformation} from "../../utils/constants.ts";
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { tomorrow } from "react-syntax-highlighter/dist/esm/styles/prism";
+import {quizInformation} from "../../utils/question.ts";
 
 type Props ={
     index : number;

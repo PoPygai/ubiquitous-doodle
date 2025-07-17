@@ -19,3 +19,9 @@ type Tasks = {
     title: string,
     taskDone : boolean,
 }
+type WelComeValue = {
+    title: string,
+    animation:string,
+    description:string,
+    button : string,
+}

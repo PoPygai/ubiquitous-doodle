@@ -8,7 +8,6 @@ This is my personal website built with **React** and deployed via **GitHub Pages
 - ✅ **ToDo List** – add, complete, and delete tasks. Tasks are saved to `localStorage`.
 - 🎮 **Mini Game** – a small interactive game built with React.
 - ❓ **Quiz** – a simple quiz with multiple-choice questions.
-- 🧾 **Code Highlighting** – uses [`react-syntax-highlighter`](https://github.com/react-syntax-highlighter/react-syntax-highlighter) for code display with syntax highlighting.
 
 ## 🛠️ Tech Stack
 
@@ -17,6 +16,7 @@ This is my personal website built with **React** and deployed via **GitHub Pages
 - [TypeScript](https://www.typescriptlang.org/)
 - [react-syntax-highlighter](https://github.com/react-syntax-highlighter/react-syntax-highlighter)
 - [GitHub Pages](https://pages.github.com/)
+- [i18n](https://www.i18next.com/)
 
 ## 🔧 Setup and Run Locally
 

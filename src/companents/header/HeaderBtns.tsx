@@ -1,9 +1,11 @@
 import * as React from "react";
 import { useEffect, useState} from "react";
+import {useTranslation} from "react-i18next";
 
 const HeaderActions:React.FC = () => {
     const rootElm = document.getElementById('root');
     const [checked, setChecked] = useState<boolean>(false);
+    const { i18n } = useTranslation();
 
 
 
@@ -12,6 +14,12 @@ const HeaderActions:React.FC = () => {
         localStorage.setItem('light-style', toggled.toString());
         if(checked) setChecked(false)
         else setChecked(true);
+    };
+
+    const changeLanguage = (event: React.ChangeEvent<HTMLSelectElement>) => {
+        const language = event.target.value;
+        i18n.changeLanguage(language); // This changes the language globally
+        localStorage.setItem('language', language); // Optional: save preference
     };
 
     useEffect(() => {
@@ -24,14 +32,24 @@ const HeaderActions:React.FC = () => {
             setChecked(false);
 
         }
+
+        const language = localStorage.getItem('language');
+        if (language) {
+            i18n.changeLanguage(language)
+        }
+
     }, [])
 
     return (
         <div className="header-actions">
             <form className={"header-actions-lang"} action="#">
-                <select>
-                    <option value={"ENG"}>ENG</option>
-                    <option value={"RU"}>RU</option>
+                <select
+                    value={i18n.language}
+                    onChange={changeLanguage}
+                    className="language-selector"
+                >
+                    <option value="en">ENG</option>
+                    <option value="ru">RU</option>
                 </select>
             </form>
             <div className="header-actions-switch">

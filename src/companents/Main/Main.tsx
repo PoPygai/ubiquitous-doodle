@@ -3,6 +3,7 @@ import Portfolio from "./Portfolio.tsx";
 import About from "./About.tsx";
 import "./style-main.css"
 import {useEffect} from "react";
+import Welcome from "./Welcome.tsx";
 
 
 const Main = () => {
@@ -25,6 +26,7 @@ const Main = () => {
 
     return (
         <main id="main">
+            <Welcome/>
             <About/>
             <Skills/>
             <Portfolio/>

@@ -1,8 +1,12 @@
-import {valueContact} from "../../utils/constants.ts";
 import  {useEffect, useRef} from "react";
+import {useTranslation} from "react-i18next";
+import type {ContactItem} from "../../utils/types";
 
 const FooterContact = () => {
     const refContact = useRef<(HTMLLIElement | null)[]>([]);
+
+    const { t } = useTranslation();
+    const valueContact = t("valueContact", { returnObjects: true }) as ContactItem[] ;
 
     useEffect(() => {
         refContact.current.forEach((item) => {
