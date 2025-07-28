@@ -72,7 +72,7 @@ const Welcome = () => {
                         {text}
                     </p>
                     <p className="welcome-description">{informations.description}</p>
-                    <button className="welcome-resume">{informations.button}</button>
+                    <a href="../../../public/resume.txt" className="welcome-resume" download>{informations.button}</a>
                 </div>
                 <img className="welcome-image" src="../../../public/images/images-bio.png" alt="photo of own website"/>
 
