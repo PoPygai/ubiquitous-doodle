@@ -8,6 +8,7 @@ const Portfolio = () => {
 
     const {t,i18n} = useTranslation();
     const valuePortfolio  = t("valuePortfolio",{ returnObjects: true }) as PortfolioItem[];
+    const {portfolioHidden} = t("hidden", {returnObjects: true}) as {portfolioHidden:string};
 
     useEffect(() => {
 
@@ -30,8 +31,7 @@ const Portfolio = () => {
 
     return (
         <section className="portfolio" id="portfolio">
-            <h2 className="visually-hidden">portfolio</h2>
-
+            <h2 className="visually-hidden">{portfolioHidden}</h2>
             <h3 className="portfolio-title " >{i18n.language === "ru" ? "Портфолио":"Portfolio"}:</h3>
             <div className="portfolio-container">
                 <ul  ref={refList}

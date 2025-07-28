@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import type {Tasks} from "../../utils/types";
+import {useTranslation} from "react-i18next";
 
 type Props = {
     task: Tasks;
@@ -13,6 +14,8 @@ const Task:React.FC<Props> = ({task,deleteTask,index,updateTask,changeStatusTask
 
     const [isEdit,setIsEdit] = useState<boolean>(false);
     const newTextValue = React.createRef<HTMLTextAreaElement>();
+    const {t} = useTranslation();
+    const {todolistEdit,todolistDone} = t("hidden", {returnObjects: true}) as {todolistEdit:string,todolistDone:string} ;
 
 
     const handleClickEdit = ()=>{
@@ -39,7 +42,7 @@ const Task:React.FC<Props> = ({task,deleteTask,index,updateTask,changeStatusTask
             <div className={'todolist-task edit'}>
                 <form action="#" className="task-form">
 
-                    <label className="visually-hidden" htmlFor="edit">window when can edit your task</label>
+                    <label className="visually-hidden" htmlFor="edit">{todolistEdit}</label>
                     <textarea className="task-edit" id="edit" name="edit" ref={newTextValue}
                               defaultValue={task.title}></textarea>
                     <button className='task-button-save'
@@ -50,7 +53,7 @@ const Task:React.FC<Props> = ({task,deleteTask,index,updateTask,changeStatusTask
             :
             <div className={`todolist-task ${task.taskDone ? "done-task" : ""}`}>
                 <form action="#" className="task-form">
-                    <label htmlFor="task-done" className="visually-hidden">button task done</label>
+                    <label htmlFor="task-done" className="visually-hidden">{todolistDone}</label>
                     <input type="checkbox" id="task-done" onChange={(e)=>handleClickDoneTask(e)}/>
                     <p className="task-description" onClick={handleClickEdit}>{task.title}</p>
                     <button className="task-button" onClick={handleClickRemove}>

@@ -25,3 +25,5 @@ export const handleDocumentClick = (e: MouseEvent,refMiniGameBlock: React.RefObj
         refListMenu.current?.classList.add("disableMenu");
     }
 };
+
+

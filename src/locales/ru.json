@@ -108,5 +108,28 @@
       "icon": "../../../icons/icons8-github-50.png",
       "href": "https://github.com/PoPygai"
     }
-  ]
+  ],
+  "todolist": {
+    "title": "Список дел",
+    "placeholder": "Напиши новою задачу",
+    "button": "Добавить задачу"
+  },
+  "hidden": {
+    "headerHidden": {
+      "headerTranslate": "кнопка для смены языка",
+      "headerMenuMiniGame": "меню мини-игр",
+      "headerTheme": "смена темы сайта"
+    },
+    "aboutHidden": "блок об авторе этого сайта",
+    "portfolioHidden": "портфолио",
+    "skillsHidden": "навыки автора этого сайта",
+    "todolistFormHidden": "Написать новую задачу",
+    "todolistEdit": "окно, в котором можно редактировать задачу",
+    "todolistDone": "кнопка выполнения задачи"
+  },
+  "errorPage": {
+    "errorStatus": "404 ошибка",
+    "errorMessage": "страница не найдена"
+  }
+
 }

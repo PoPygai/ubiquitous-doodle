@@ -29,9 +29,10 @@
     font-size: clamp(10px, 0.8vw, 24px);
 }
 .todolist-header-button{
+    text-align: center;
     width: 7vw;
     min-width: 82px;
-    font-size: clamp(10px, 0.8vw, 24px);
+    font-size: clamp(8px, 0.8vw, 24px);
     height: 2.6vw;
     min-height: 30px;
 }
@@ -68,7 +69,7 @@
 }
 
 .task-edit{
-    height: 2.6vw;
+    height: 80%;
     width: 100%;
     margin-right: 10px;
 }

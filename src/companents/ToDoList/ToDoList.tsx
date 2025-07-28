@@ -18,7 +18,6 @@ const ToDoList = () => {
 
     return (
         <section className="todolist">
-            <h2 className="visually-hidden">Todo-List</h2>
             <HeaderTodoList tasks={tasks} setTasks={setTasks}/>
             <MainTodoList tasks={tasks} setTasks={setTasks}/>
         </section>

@@ -25,3 +25,21 @@ type WelComeValue = {
     description:string,
     button : string,
 }
+type TodoListValue = {
+    title: string,
+    placeholder:string,
+    button : string,
+}
+
+type HiddenHeaderValue ={
+    headerHidden:{
+        headerTranslate:string,
+        headerMenuMiniGame: string,
+        headerTheme:string,
+    }
+}
+
+type errorValues = {
+    errorStatus:string,
+    errorMessage:string
+}

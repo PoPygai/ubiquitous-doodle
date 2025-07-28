@@ -1,13 +1,14 @@
 import * as React from "react";
 import { useEffect, useState} from "react";
 import {useTranslation} from "react-i18next";
+import type {HiddenHeaderValue} from "../../utils/types";
 
 const HeaderActions:React.FC = () => {
     const rootElm = document.getElementById('root');
     const [checked, setChecked] = useState<boolean>(false);
-    const { i18n } = useTranslation();
 
-
+    const { t ,i18n } = useTranslation();
+    const {headerHidden} = t("hidden", {returnObjects: true}) as HiddenHeaderValue ;
 
     const handlerClick = () => {
         const toggled = rootElm!.classList.toggle('light-style');
@@ -18,8 +19,8 @@ const HeaderActions:React.FC = () => {
 
     const changeLanguage = (event: React.ChangeEvent<HTMLSelectElement>) => {
         const language = event.target.value;
-        i18n.changeLanguage(language); // This changes the language globally
-        localStorage.setItem('language', language); // Optional: save preference
+        i18n.changeLanguage(language);
+        localStorage.setItem('language', language);
     };
 
     useEffect(() => {
@@ -43,7 +44,9 @@ const HeaderActions:React.FC = () => {
     return (
         <div className="header-actions">
             <form className={"header-actions-lang"} action="#">
+                <label className="visually-hidden" htmlFor="translate">{headerHidden.headerTranslate}</label>
                 <select
+                    id={"translate"}
                     value={i18n.language}
                     onChange={changeLanguage}
                     className="language-selector"
@@ -53,6 +56,7 @@ const HeaderActions:React.FC = () => {
                 </select>
             </form>
             <div className="header-actions-switch">
+                <h2 className="visually-hidden">{headerHidden.headerTheme}</h2>
                 <input className={"header-actions-input"} type="checkbox" checked={checked} onChange={handlerClick}
                        id="darkmode-toggle"/>
                 <label className="header-actions-slider" htmlFor="darkmode-toggle" role="switch"

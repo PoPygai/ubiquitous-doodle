@@ -21,7 +21,6 @@ const Question:React.FC<Props> = ({index,setWasAnswerTrue}) => {
     }, [index]);
 
 
-    //todo
     const handleClick =  (e:React.MouseEvent<HTMLLIElement>)=>{
         const answer = e.currentTarget.dataset.answer;
         const trueAnswer = Object.keys(quizInformation[index].trueAnswer)[0];

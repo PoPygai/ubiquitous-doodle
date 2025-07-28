@@ -2,6 +2,7 @@ import React, {useEffect, useRef} from "react";
 import {handleDocumentClick, handlerClickMenu} from "../../utils/tools.ts";
 import {useNavigate} from "react-router";
 import { useTranslation } from 'react-i18next';
+import type {HiddenHeaderValue} from "../../utils/types";
 
 
 const NavBar:React.FC = () => {
@@ -14,7 +15,9 @@ const NavBar:React.FC = () => {
     const { t  } = useTranslation();
     const valueHeaderBtns = t("valueHeaderBtns", { returnObjects: true }) as string[];
     const valueMenuBtns  = t("valueMenuBtns", { returnObjects: true }) as string[];
+    const {headerHidden} = t("hidden", {returnObjects: true}) as HiddenHeaderValue ;
 
+    // todo
     const valueHeaderBtnsENG = (t("valueHeaderBtns", { lng: "en", returnObjects: true })) as string[];
     const valueMenuBtnsENG  = t("valueMenuBtns", { lng: "en", returnObjects: true }) as string[];
 
@@ -67,7 +70,7 @@ const NavBar:React.FC = () => {
                 ))}
                 <li className="header-menu-item mini-game"     ref={refMiniGameBlock} >
                     <a className="header-menu-link"  onClick={()=>handlerClickMenu(refItems,refListMenu)}>Mini-Games</a>
-                    <h2 className="visually-hidden">menu of mini game</h2>
+                    <h2 className="visually-hidden">{headerHidden.headerMenuMiniGame}</h2>
                     <ul ref={refListMenu} className="mini-game-list disableMenu">
                         {valueMenuBtns.map((value, i) => (
                             <li className="mini-game-item" key={i}>

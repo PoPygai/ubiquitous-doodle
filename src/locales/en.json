@@ -107,5 +107,27 @@
       "icon": "../../../icons/icons8-github-50.png",
       "href": "https://github.com/PoPygai"
     }
-  ]
+  ],
+  "todolist": {
+    "title": "ToDoList",
+    "placeholder": "Write New Task",
+    "button": "Add New Task"
+  },
+  "hidden": {
+    "headerHidden": {
+      "headerTranslate":"button for change language",
+      "headerMenuMiniGame": "menu of mini game",
+      "headerTheme": "change theme website"
+    },
+    "aboutHidden": "block about author this website ",
+    "portfolioHidden" : "portfolio",
+    "skillsHidden": "Skills author this website",
+    "todolistFormHidden": "Write New Task",
+    "todolistEdit": "window when can edit your task",
+    "todolistDone" : "button task done"
+  },
+  "errorPage": {
+    "errorStatus": "404 error",
+    "errorMessage": "page not found"
+  }
 }

@@ -8,6 +8,7 @@ const Skills = () => {
 
     const {t, i18n} = useTranslation();
     const valueCardSkills  = t("valueCardSkills",{ returnObjects: true }) as CardSkillsItem[];
+    const {skillsHidden} = t("hidden", {returnObjects: true}) as {skillsHidden:string};
 
     useEffect(() => {
         const section = refSection.current;
@@ -33,7 +34,8 @@ const Skills = () => {
                  id="skills"
         >
             <div className="container">
-                <h2 className="visually-hidden">Skills author this website</h2>
+                {/*todo   */}
+                <h2 className="visually-hidden">{skillsHidden}</h2>
                 <h4 className="skills-hint hint " >{i18n.language === "ru" ?"Навыки" : "Skills"}</h4>
                 <h2 className="skills-title title">{i18n.language === "ru" ?"Что я могу" : "What Can I Do"}</h2>
                 <div className="skills-container">
