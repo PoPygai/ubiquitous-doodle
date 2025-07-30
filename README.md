@@ -6,7 +6,6 @@ This is my personal website built with **React** and deployed via **GitHub Pages
 
 - 🧍‍♂️ **About Me** – a section with brief personal information.
 - ✅ **ToDo List** – add, complete, and delete tasks. Tasks are saved to `localStorage`.
-- 🎮 **Mini Game** – a small interactive game built with React.
 - ❓ **Quiz** – a simple quiz with multiple-choice questions.
 
 ## 🛠️ Tech Stack
