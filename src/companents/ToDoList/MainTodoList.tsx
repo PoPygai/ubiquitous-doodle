@@ -30,12 +30,10 @@ const MainTodoList: React.FC<Props> = ({tasks,setTasks}) => {
     }
     const changeStatusTask = (index: number) => {
         const temp = tasks.slice();
-        console.log(temp[index].taskDone,"before")
         temp[index].taskDone = !temp[index].taskDone;
         setTasks(temp);
         localStorage.setItem("tasks", JSON.stringify(temp));
 
-        console.log(temp[index].taskDone,"after")
 
     }
 

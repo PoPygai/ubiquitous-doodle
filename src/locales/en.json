@@ -9,8 +9,7 @@
 
   "valueMenuBtns": [
     "Todo-List",
-    "Quiz",
-    "Game"
+    "Quiz"
   ],
   "Welcome": {
     "title": "Hello,I'm DavidR",

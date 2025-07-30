@@ -6,27 +6,56 @@ import {quizInformation} from "../../utils/question.ts";
 type Props ={
     index : number;
     setWasAnswerTrue: (bool : boolean) => void;
+    clearCounter : boolean;
+    setClearCounter: (bool : boolean) => void;
+    maxCountQuestion: number;
+    setMaxCountQuiz : (index:number)  =>void;
+
 }
 
-const Question:React.FC<Props> = ({index,setWasAnswerTrue}) => {
+const Question:React.FC<Props> = ({index,setWasAnswerTrue,clearCounter,setClearCounter,maxCountQuestion,setMaxCountQuiz}) => {
     const refItems = useRef<(HTMLLIElement | null)[]>([]);
-
+    const trueAnswer = Object.keys(quizInformation[index].trueAnswer)[0];
 
     useEffect(() => {
+
+
+
         refItems.current.forEach(el => {
             el?.classList.remove("true-answer");
             el?.classList.remove("false-answer");
         });
+
+        if(clearCounter){
+            setWasAnswerTrue(false)
+            setClearCounter(false)
+            return;
+        }
+
+        if(index <= maxCountQuestion){
+            refItems.current.some(item => {
+                if (item?.dataset.answer === trueAnswer) {
+                    item.classList.add("true-answer");
+                    setWasAnswerTrue(true);
+                    localStorage.setItem("counter-question",JSON.stringify(index));
+                }
+            });
+            return;
+        }
+
         setWasAnswerTrue(false)
+
     }, [index]);
 
 
     const handleClick =  (e:React.MouseEvent<HTMLLIElement>)=>{
         const answer = e.currentTarget.dataset.answer;
-        const trueAnswer = Object.keys(quizInformation[index].trueAnswer)[0];
         if(trueAnswer === answer){
             e.currentTarget.classList.add("true-answer");
             setWasAnswerTrue(true);
+            setMaxCountQuiz(index);
+            localStorage.setItem("max-count-question", String(index))
+
         }else{
             e.currentTarget.classList.add("false-answer");
         }
@@ -38,7 +67,7 @@ const Question:React.FC<Props> = ({index,setWasAnswerTrue}) => {
                 {quizInformation[index].task}
             </SyntaxHighlighter>
 
-            <ul className="quiz-list">
+            <ul className="quiz-list" >
                 {
                     Object.entries(quizInformation[index].answers).map((answer, i) => {
                         return <li className="quiz-item "

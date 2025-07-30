@@ -23,6 +23,7 @@
 }
 
 .quiz-wrapper{
+    position: relative;
     border: 1px var(--color-text) solid;
     border-radius: 5px;
     text-align: center;
@@ -104,6 +105,24 @@
     box-shadow: none;
 }
 
+
+.quiz-reset{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    border: none;
+    width: 51px;
+    aspect-ratio: 1;
+    cursor: pointer;
+}
+
+.quiz-reset--image{
+    width: 100%;
+}
+.quiz-reset:hover{
+    width: 53px;
+}
 
 @media (max-width: 500px) {
     .quiz-list {

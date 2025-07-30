@@ -107,7 +107,7 @@
     transform: translateX(-50%);
 
     width: 95px;
-    height: 100px;
+    height: 80px;
     background: var(--bg-color);
     border: 1px solid var(--color-text-gray);
     border-radius: 7px;
@@ -153,7 +153,7 @@
 @media (max-width: 400px){
     .mini-game-list {
         width: 70px;
-        height: 80px;
+        height: 60px;
         font-size: 10px;
     }
 }

@@ -24,7 +24,7 @@
 }
 .welcome-image{
     max-width: 20vw;
-    min-width: 320px;
+    min-width: 280px;
 }
 .welcome-description{
     font-size: clamp(12px, 1.5vw, 30px);

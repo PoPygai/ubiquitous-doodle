@@ -31,7 +31,6 @@ const Task:React.FC<Props> = ({task,deleteTask,index,updateTask,changeStatusTask
     }
     const handleClickDoneTask = (e: React.ChangeEvent<HTMLInputElement>)=>{
         e.currentTarget.parentElement!.parentElement!.classList.toggle('done-task');
-        console.log(index , "inner")
         changeStatusTask(index)
     }
 

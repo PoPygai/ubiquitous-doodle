@@ -1,4 +1,5 @@
 import React from "react";
+import {quizInformation} from "./question.ts";
 
 export const handlerClickMenu = (refItems: React.RefObject<(HTMLAnchorElement | null)[]>,
     refListMenu: React.RefObject<HTMLUListElement | null>) => {
@@ -27,3 +28,17 @@ export const handleDocumentClick = (e: MouseEvent,refMiniGameBlock: React.RefObj
 };
 
 
+export const getCountQues = ()=>{
+    const stored = localStorage.getItem("counter-question");
+    const parsed = Number(stored);
+    if (parsed && parsed <= quizInformation.length){
+        return (parsed);
+    }
+    return 0;
+}
+export const getMaxCountQues = ()=>{
+    const maxCount = localStorage.getItem("max-count-question");
+    if(maxCount) return Number(maxCount);
+    localStorage.setItem("max-count-question", "0")
+    return -1 ;
+}
