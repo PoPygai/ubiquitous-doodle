@@ -53,6 +53,7 @@ const HeaderActions:React.FC = () => {
                 >
                     <option value="en">ENG</option>
                     <option value="ru">RU</option>
+                    <option value="heb">HEB</option>
                 </select>
             </form>
             <div className="header-actions-switch">

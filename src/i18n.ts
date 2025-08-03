@@ -3,6 +3,8 @@ import { initReactI18next } from 'react-i18next';
 
 import en from './locales/en.json';
 import ru from './locales/ru.json';
+import heb from './locales/heb.json';
+
 
 // Initialize i18next
 i18n
@@ -10,16 +12,17 @@ i18n
     .init({
         resources: {
             en: { translation: en },
-            ru: { translation: ru }
+            ru: { translation: ru },
+            heb : {translation: heb }
         },
-        lng: localStorage.getItem('language') || 'en', // Read from localStorage first
+        lng: localStorage.getItem('language') || 'en',
         fallbackLng: 'en',
         interpolation: {
             escapeValue: false
         },
         react: {
-            useSuspense: false // Important for SSR compatibility
+            useSuspense: false
         }
     });
 
-export default i18n; // Export the initialized instance
+export default i18n;

@@ -1,0 +1,132 @@
+{
+  "valueHeaderBtns": [
+    "בית",
+    "אודות",
+    "כישורים",
+    "תיק עבודות",
+    "צור קשר"
+  ],
+
+  "valueMenuBtns": [
+    "רשימת מטלות",
+    "חידון"
+  ],
+  "Welcome": {
+    "title": "שלום, אני דויד אר",
+    "animation": "אני מפתח",
+    "description": "אני - מפתח Full stack מתחיל",
+    "button": "הורד קורות חיים"
+  },
+
+  "valueCardSkills": [
+    {
+      "title": "🧱 HTML / CSS / SASS",
+      "description": "עיצוב נקי ורספונסיבי. שימוש בטוח ב-SASS למבנה ותחזוקה טובים יותר."
+    },
+    {
+      "title": "🟨 JavaScript / TypeScript",
+      "description": "ידע מוצק ב-JS ו-TS. ניסיון בעבודה עם לוגיקה, מערכים, אובייקטים, הבטחות, async/await ותכנות מונחה עצמים."
+    },
+    {
+      "title": "⚛️ React",
+      "description": "בניית אפליקציות חד-страничные באמצעות קומפוננטות, hooks (useState, useEffect, useContext), ניתוב וניהול מצב."
+    },
+    {
+      "title": "🌐 Node.js / Express",
+      "description": "יצירת לוגיקת backend, הגדרת נתיבים, middleware ובניית RESTful APIs."
+    },
+    {
+      "title": "🧠 חשיבה Full Stack",
+      "description": "הבנת מחזור הפיתוח המלא - משולחן הלקוח ועד אינטגרציה בצד השרת."
+    },
+    {
+      "title": "🚀 פרויקטים אישיים ולמידה מהירה",
+      "description": "עבודה על פרויקטים אישיים, למידה מתמדת של כלים וטכנולוגיות חדשות, וצמיחה כמפתח."
+    }
+  ],
+
+  "textBio": "הי! שמי דויד, אני בן 17 ומפתח Full Stack שאפתן. אני נלהב מפיתוח אתרים ותמיד להוט ללמוד טכנולוגיות חדשות. אני מפתח באופן פעיל את הכישורים שלי הן בצד הלקוח והן בצד השרת. יש לי ניסיון מעשי ב-HTML, CSS, SASS, JavaScript, TypeScript, React, Node.js ו-Express. כרגע אני עובד על פרויקטים אישיים ושואף לצבור ניסיון מסחרי ראשון בתעשייה. סיימתי קורס Full Stack Developer במרכז ההדרכה Tel-Ran. אני פתוח לידע חדש, אתגרים מרגשים והזדמנויות לשיתוף פעולה.",
+
+  "valuePortfolio": [
+    {
+      "title": "FitnessUi",
+      "href": "https://github.com/PoPygai/FintnessUi.git",
+      "description": "אתר עם HTML&CSS"
+    },
+    {
+      "title": "Website",
+      "href": "https://github.com/PoPygai/FintnessUi.git",
+      "description": "אתר עם HTML&SCSS"
+    },
+    {
+      "title": "About Me",
+      "href": "https://github.com/PoPygai/FintnessUi.git",
+      "description": "אתר עם REACT"
+    },
+    {
+      "title": "Bakery Shop",
+      "href": "https://github.com/PoPygai/FintnessUi.git",
+      "description": "אתר עם REACT&MUI"
+    },
+    {
+      "title": "Server1",
+      "href": "https://github.com/PoPygai/FintnessUi.git",
+      "description": "שרת עם Express&MySql"
+    },
+    {
+      "title": "Server2",
+      "href": "https://github.com/PoPygai/FintnessUi.git",
+      "description": "שרת עם Express&MongoDB"
+    },
+    {
+      "title": "Front + Back",
+      "href": "https://github.com/PoPygai/FintnessUi.git",
+      "description": "Front + Back"
+    }
+  ],
+
+  "valueContact": [
+    {
+      "topic": "Gmail",
+      "icon": "../../../icons/icons8-gmail-48.png",
+      "href": "mailto:davidrashkovskiy@gmail.com"
+    },
+    {
+      "topic": "Telegram",
+      "icon": "../../../icons/icons8-telegram-48.png",
+      "href": "https://t.me/user_nn_123"
+    },
+    {
+      "topic": "LeetCode",
+      "icon": "../../../icons/icons8-leetcode-48.png",
+      "href": "https://leetcode.com/u/PoPygai/"
+    },
+    {
+      "topic": "GitHub",
+      "icon": "../../../icons/icons8-github-50.png",
+      "href": "https://github.com/PoPygai"
+    }
+  ],
+  "todolist": {
+    "title": "רשימת מטלות",
+    "placeholder": "כתוב משימה חדשה",
+    "button": "הוסף משימה חדשה"
+  },
+  "hidden": {
+    "headerHidden": {
+      "headerTranslate":"כפתור לשינוי שפה",
+      "headerMenuMiniGame": "תפריט משחקים קטנים",
+      "headerTheme": "שינוי ערכת עיצוב האתר"
+    },
+    "aboutHidden": "בלוק אודות יוצר האתר",
+    "portfolioHidden" : "portfolio",
+    "skillsHidden": "הכישורים של יוצר האתר",
+    "todolistFormHidden": "כתוב משימה חדשה",
+    "todolistEdit": "חלון לעריכת המשימה שלך",
+    "todolistDone" : "כפתור לסימון משימה שהושלמה"
+  },
+  "errorPage": {
+    "errorStatus": "שגיאה 404",
+    "errorMessage": "הדף לא נמצא"
+  }
+}
