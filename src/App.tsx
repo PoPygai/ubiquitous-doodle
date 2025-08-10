@@ -10,13 +10,6 @@ import ErrorPath from "./companents/ErrorPath.tsx";
 
 
 
-// import {useState} from "react";
-// import {contextTheme} from "./context/context.ts";
-// const [themeLight, setThemeLight] = useState(false);
-
-// <contextTheme.Provider value={{ themeLight, setThemeLight }}>
-// </contextTheme.Provider>
-
 
 function App() {
 
