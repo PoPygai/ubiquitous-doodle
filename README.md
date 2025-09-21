@@ -20,7 +20,7 @@ This is my personal website built with **React** and deployed via **GitHub Pages
 ## 🔧 Setup and Run Locally
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME
-cd YOUR_REPOSITORY_NAME
+git clone https://github.com/PoPygai/ubiquitous-doodle
+cd ubiquitous-doodle
 npm install
 npm run dev
