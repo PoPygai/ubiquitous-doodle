@@ -1,1 +1,49 @@
-resume bla bla
+David Rashkovskiy
+
+Full Stack Web Developer
+davidrashkovskiy@gmail.com
+https://github.com/PoPygai
+https://t.me/user_nn_123
+
+Profile
+
+• Motivated and detail-oriented Full Stack Developer with hands-on experience in both frontend and backend development.
+• Effective team player with the ability to collaborate in cross-cultural environments and communicate clearly with technical and non-technical teams.
+• Strong problem-solving and analytical skills, with a passion for building scalable, user-friendly web applications.
+• Languages: Russian – Native | Hebrew – Intermediate | English – Upper-Intermediate
+
+Skills
+
+Frontend:
+• Create adaptive and cross-browser web interfaces using HTML5, CSS3, JavaScript, and React.
+• Manage application state with Redux, understanding core principles such as actions, reducers, and the store.
+• Work with responsive design tools like Figma and optimize UI/UX for performance and accessibility.
+
+Backend:
+• Build and maintain RESTful APIs using Node.js and Express.
+• Work with databases such as MongoDB (NoSQL) and MySQL (SQL)
+• Integrate and consume external REST APIs, ensuring secure and efficient data flow between frontend and backend.
+• Basic understanding of authentication, authorization, and middleware.
+
+Tools & Other:
+• Git , npm, Webpack, Vite, Postman, WebStorm.
+• Familiar with Linux commands and shell environment.
+
+Education 
+Hugim high-school, Israel (2022-still studying)
+Training center Tel ran, Israel, courses Full stake ( 2024- still studying)
+
+Frontend Pet Projects
+https://github.com/PoPygai/FintnessUi
+https://github.com/PoPygai/ubiquitous-doodle
+https://github.com/PoPygai/bakery_shop
+https://github.com/PoPygai/coffee-shop-ui (in progress)
+
+Back Pet Projects
+https://github.com/PoPygai/server-coffee-ui 
+
+
+Additional Information
+• Languages: Russian, Hebrew, English
+• Currently learning Java for backend development.
+• Fast learner, eager to apply new technologies in practice
