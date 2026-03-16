@@ -15,7 +15,7 @@ Profile
 Skills
 
 Frontend:
-• Create adaptive and cross-browser web interfaces using HTML5, CSS3, JavaScript, and React.
+• Create adaptive and cross-browser web interfaces using HTML5, CSS3, JavaScript, React and Next.js.
 • Manage application state with Redux, understanding core principles such as actions, reducers, and the store.
 • Work with responsive design tools like Figma and optimize UI/UX for performance and accessibility.
 
@@ -26,21 +26,9 @@ Backend:
 • Basic understanding of authentication, authorization, and middleware.
 
 Tools & Other:
-• Git , npm, Webpack, Vite, Postman, WebStorm.
+• Git , npm, Webpack, Vite, Postman, WebStorm,Docker and aws.
 • Familiar with Linux commands and shell environment.
 
-Education 
-Hugim high-school, Israel (2022-still studying)
-Training center Tel ran, Israel, courses Full stake ( 2024- still studying)
-
-Frontend Pet Projects
-https://github.com/PoPygai/FintnessUi
-https://github.com/PoPygai/ubiquitous-doodle
-https://github.com/PoPygai/bakery_shop
-https://github.com/PoPygai/coffee-shop-ui (in progress)
-
-Back Pet Projects
-https://github.com/PoPygai/server-coffee-ui 
 
 
 Additional Information
