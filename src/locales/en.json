@@ -14,7 +14,7 @@
   "Welcome": {
     "title": "Hello,I'm DavidR",
     "animation": "I am Developer",
-    "description": "I am - began developer Full stack",
+    "description": "I am - Full stack developer",
     "button": "Download resume"
   },
 
@@ -40,12 +40,12 @@
       "description": "Understanding the full cycle of web development — from client-side to server-side integration."
     },
     {
-      "title": "🚀 Pet Projects & Fast Learning",
+      "title": "⬜ Next.js",
       "description": "Working on personal projects, constantly learning new tools and technologies, and growing as a developer."
     }
   ],
 
-  "textBio": "Hi! My name is David, I’m 17 years old, and I’m an aspiring Full Stack developer. I'm passionate about web development and always eager to learn new technologies. I’m actively growing my skills in both frontend and backend development. I have hands-on experience with HTML, CSS, SASS, JavaScript, TypeScript, React, Node.js, and Express. Currently, I’m working on personal pet projects and aiming to gain my first commercial experience in the industry. I’ve completed a Full Stack Developer course at the Tel-Ran training center. I’m open to new knowledge, exciting challenges, and collaboration opportunities.",
+  "textBio": "Hi! My name is David, I’m 17 years old, and I’m Full Stack developer. I'm passionate about web development and always eager to learn new technologies. I’m actively growing my skills in both frontend and backend development. I have hands-on experience with HTML, CSS, SASS, JavaScript, TypeScript, React, Node.js,Next.js, and Express. Currently, I’m working on personal pet projects and aiming to gain my first commercial experience in the industry. I’ve completed a Full Stack Developer course at the Tel-Ran training center. I’m open to new knowledge, exciting challenges, and collaboration opportunities.",
 
   "valuePortfolio": [
     {
